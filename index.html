@@ -61,141 +61,16 @@ constructed golden dataset comprising 690k &ltquery, micro-video&gt
 pairs and experimental results demonstrate its superiority.
 </div>
 
-<!-- Code -->
-<center>
-<h2><font face="helvetica" style="font-size:24px">Code</font></h2>
-<hr style="margin-top:-10px; margin-bottom:13px">
-</center>
-
-<center>
-    <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 10px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 10px;word-break:normal;}
-    .tg .tg-baqh{text-align:center;vertical-align:top}
-    .tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}
-    .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-    .tg .tg-nrix{text-align:center;vertical-align:middle}
-    </style>
-    <table class="tg">
-    <thead>
-      <tr>
-        <th class="tg-amwm" rowspan="2"><span style="color:#000">Model</span></th>
-        <th class="tg-amwm" colspan="2"><span style="color:#000">Diversity</span></th>
-        <th class="tg-amwm" colspan="6"><span style="color:#000">Relevance</span></th>
-        <th class="tg-amwm" rowspan="2"><span style="color:#000">R/D</span></th>
-      </tr>
-      <tr>
-        <th class="tg-amwm"><span style="color:#000">mB4</span></th>
-        <th class="tg-amwm"><span style="color:#000">U</span></th>
-        <th class="tg-amwm"><span style="color:#000">B1</span></th>
-        <th class="tg-amwm"><span style="color:#000">B2</span></th>
-        <th class="tg-amwm"><span style="color:#000">B3</span></th>
-        <th class="tg-amwm"><span style="color:#000">B4</span></th>
-        <th class="tg-amwm"><span style="color:#000">R</span></th>
-        <th class="tg-amwm"><span style="color:#000">C</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="tg-baqh"><span style="color:#000">CVAE</span></td>
-        <td class="tg-nrix">0.917</td>
-        <td class="tg-nrix">3.83%</td>
-        <td class="tg-nrix">0.861</td>
-        <td class="tg-nrix">0.822</td>
-        <td class="tg-nrix">0.781</td>
-        <td class="tg-nrix">0.747</td>
-        <td class="tg-nrix">0.811</td>
-        <td class="tg-nrix">2.95</td>
-        <td class="tg-nrix">0.815</td>
-      </tr>
-      <tr>
-        <td class="tg-baqh"><span style="color:#000">AG-CVAE</span></td>
-        <td class="tg-nrix">0.845</td>
-        <td class="tg-nrix">8.70%</td>
-        <td class="tg-nrix">0.86</td>
-        <td class="tg-nrix">0.822</td>
-        <td class="tg-nrix">0.781</td>
-        <td class="tg-nrix">0.745</td>
-        <td class="tg-nrix">0.818</td>
-        <td class="tg-nrix">2.95</td>
-        <td class="tg-nrix">0.882</td>
-      </tr>
-      <tr>
-        <td class="tg-baqh"><span style="color:#000">DCM</span></td>
-        <td class="tg-nrix">0.437</td>
-        <td class="tg-nrix">73.50%</td>
-        <td class="tg-nrix">0.666</td>
-        <td class="tg-nrix">0.555</td>
-        <td class="tg-nrix">0.457</td>
-        <td class="tg-nrix">0.378</td>
-        <td class="tg-nrix">0.606</td>
-        <td class="tg-nrix">1.71</td>
-        <td class="tg-nrix">0.865</td>
-      </tr>
-      <tr>
-        <td class="tg-baqh"><span style="color:#000">POS</span></td>
-        <td class="tg-nrix">0.953</td>
-        <td class="tg-nrix">2.33%</td>
-        <td class="tg-nrix">0.855</td>
-        <td class="tg-nrix">0.816</td>
-        <td class="tg-nrix">0.773</td>
-        <td class="tg-nrix">0.738</td>
-        <td class="tg-nrix">0.804</td>
-        <td class="tg-nrix">2.94</td>
-        <td class="tg-nrix">0.774</td>
-      </tr>
-      <tr>
-        <td class="tg-baqh"><span style="color:#000">Seq-CVAE</span></td>
-        <td class="tg-nrix">0.78</td>
-        <td class="tg-nrix">16.40%</td>
-        <td class="tg-nrix">0.845</td>
-        <td class="tg-nrix">0.803</td>
-        <td class="tg-nrix">0.757</td>
-        <td class="tg-nrix">0.719</td>
-        <td class="tg-nrix">0.786</td>
-        <td class="tg-nrix">2.88</td>
-        <td class="tg-nrix">0.922</td>
-      </tr>
-      <tr>
-        <td class="tg-amwm"><span style="color:#000">FLIP (Ours)</span></td>
-        <td class="tg-wa1i">0.692</td>
-        <td class="tg-wa1i">23.20%</td>
-        <td class="tg-wa1i">0.854</td>
-        <td class="tg-wa1i">0.813</td>
-        <td class="tg-wa1i">0.77</td>
-        <td class="tg-wa1i">0.733</td>
-        <td class="tg-wa1i">0.8</td>
-        <td class="tg-wa1i">2.89</td>
-        <td class="tg-wa1i">1.059</td>
-      </tr>
-    </tbody>
-    </table>
-</center>
-
-
-<br>
-
-<font face="helvetica" style="font-size:15px">
-<div>    
-    <a href="" style="text-decoration: none;">
-    <img src="./CSAN/figs/download_button.jpg" height="30px">
-    </a>
-    <div style="margin-left: 10px; margin-top: 1px; display: inline-block;">
-        <a href="https://pan.baidu.com/s/1S7WBzPlmpYpdQC0t9zhQtw?pwd=v5r4">Baidu Cloud</a> (password: v5r4)
-        <br>
-        Code & checkpoints: pretraining (MEEK), diverse captioning (FLIP), and baseline models.
-    </div>
-</div>
-
 <br>
 
 <!-- Dataset -->
 <center>
-<h2><font face="helvetica" style="font-size:24px">Dataset</font></h2>
+<h2><font face="helvetica" style="font-size:24px">Datasets</font></h2>
 <hr style="margin-top:-10px; margin-bottom:13px">
+</center>
+
+<center>
+    <img src="./CSAN/figs/two_datasets.png" height="300">
 </center>
 
     <!-- KwaiSVC-222k -->
@@ -212,7 +87,7 @@ consist of video view count, click through rate, and play completion rate.
     </div>
     <br>
     <a href="" style="text-decoration: none;">
-    <img src="./CSAN/figs/download_button.jpg" height="30px">
+    <img src="./CSAN/figs/data.png" height="30px">
     </a>
     <div style="margin-left: 10px; margin-top: 1px; display: inline-block;">
         <a href="https://pan.baidu.com/s/1v6x14o5K9IuM3A-IS29UoA?pwd=ihc2">Baidu Cloud</a> (password: ihc2)
@@ -236,9 +111,218 @@ This dataset is constructed similarly to KwaiSVC-222k. The only difference is th
     <div style= "text-indent:25px; line-height: 1.5; text-align:justify">
         Due to copyright issues, this dataset is only provided by request.
     </div>
+    <br>
+    <a href="" style="text-decoration: none;">
+    <img src="./CSAN/figs/data.png" height="30px"  style="vertical-align:middle;">
+    </a>
+    <div style="margin-left: 10px; margin-top: 1px; display: inline-block;">
+        Due to copyright issues, this dataset is only provided by <a href="mailto:nieliqiang@gmail.com">request</a>.
+    </div>
 </div>
 
 <br>
+
+    <!-- Dataset statistics -->
+<h2><font face="helvetica" style="font-size:20px">Dataset statistics </font></h2>
+
+<center>
+<style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-z27t{background-color:#154D9D;text-align:center;vertical-align:middle}
+    .tg .tg-f4yw{background-color:#FFF;text-align:center;vertical-align:middle}
+    </style>
+    <table class="tg">
+    <caption style="font-size: 18px"><b> Comparison among existing video captioning datasets </b></caption>
+    <thead>
+      <tr>
+        <th class="tg-z27t"><span style="font-weight:bold;color:white">Dataset</span></th>
+        <th class="tg-z27t"><span style="font-weight:bold;color:white">Clips</span></th>
+        <th class="tg-z27t"><span style="font-weight:bold;color:white">Captions</span></th>
+        <th class="tg-z27t"><span style="font-weight:bold;color:white">Pairs</span></th>
+        <th class="tg-z27t"><span style="font-weight:bold;color:white">Purpose</span></th>
+        <th class="tg-z27t"><span style="font-weight:bold;color:white">Category</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-f4yw"><span style="color:black">MSVD</span></td>
+        <td class="tg-f4yw"><span style="color:black">2k</span></td>
+        <td class="tg-f4yw"><span style="color:black">80k</span></td>
+        <td class="tg-f4yw"><span style="color:black">80k</span></td>
+        <td class="tg-f4yw"><span style="color:black">content-oriented</span></td>
+        <td class="tg-f4yw"><span style="color:black">-</span></td>
+      </tr>
+      <tr>
+        <td class="tg-f4yw"><span style="color:black">MSR-VTT</span></td>
+        <td class="tg-f4yw"><span style="color:black">10k</span></td>
+        <td class="tg-f4yw"><span style="color:black">200k</span></td>
+        <td class="tg-f4yw"><span style="color:black">200k</span></td>
+        <td class="tg-f4yw"><span style="color:black">content-oriented</span></td>
+        <td class="tg-f4yw"><span style="color:black">20</span></td>
+      </tr>
+      <tr>
+        <td class="tg-f4yw"><span style="color:black">Kwai-SVC-222k</span></td>
+        <td class="tg-f4yw"><span style="color:black">222k</span></td>
+        <td class="tg-f4yw"><span style="color:black">144k</span></td>
+        <td class="tg-f4yw"><span style="color:black">690k</span></td>
+        <td class="tg-f4yw"><span style="color:black">search-oriented</span></td>
+        <td class="tg-f4yw"><span style="color:black">32</span></td>
+      </tr>
+      <tr>
+        <td class="tg-f4yw"><span style="color:black">Kwai-SVC-11M</span></td>
+        <td class="tg-f4yw"><span style="color:black">11M</span></td>
+        <td class="tg-f4yw"><span style="color:black">4M</span></td>
+        <td class="tg-f4yw"><span style="color:black">35M</span></td>
+        <td class="tg-f4yw"><span style="color:black">search-oriented</span></td>
+        <td class="tg-f4yw"><span style="color:black">35</span></td>
+      </tr>
+    </tbody>
+    </table>
+</center>
+
+<br>
+<center>
+    <img src="./CSAN/figs/cat_statistics.png" height="500">
+</center>
+
+<!-- Code -->
+<center>
+    <h2><font face="helvetica" style="font-size:24px">Code</font></h2>
+    <hr style="margin-top:-10px; margin-bottom:13px">
+    </center>
+    
+    <center>
+    <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 10px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 10px;word-break:normal;}
+    .tg .tg-4337{background-color:#154d9d;color:#ffffff;text-align:center;vertical-align:top}
+    .tg .tg-baqh{text-align:center;vertical-align:top}
+    .tg .tg-wa1i{font-weight:bold;text-align:center;vertical-align:middle}
+    .tg .tg-aege{background-color:#154D9D;color:#ffffff;font-weight:bold;text-align:center;vertical-align:middle}
+    .tg .tg-w4by{background-color:#154d9d;color:#ffffff;font-weight:bold;text-align:center;vertical-align:middle}
+    .tg .tg-7yig{background-color:#FFF;text-align:center;vertical-align:top}
+    .tg .tg-f4yw{background-color:#FFF;text-align:center;vertical-align:middle}
+    .tg .tg-nrix{text-align:center;vertical-align:middle}
+    .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+    </style>
+    <table class="tg">
+    <caption style="font-size:18px"> <b> Performance Comparison for Search-oriented Micro-video Captioning </b></caption>
+    <thead>
+      <tr>
+        <th class="tg-aege" rowspan="2">Model</th>
+        <th class="tg-w4by" colspan="2">Diversity</th>
+        <th class="tg-w4by" colspan="6">Relevance</th>
+        <th class="tg-w4by" rowspan="2">R/D</th>
+      </tr>
+      <tr>
+        <th class="tg-w4by">mB4</th>
+        <th class="tg-w4by">U</th>
+        <th class="tg-w4by">B1</th>
+        <th class="tg-w4by">B2</th>
+        <th class="tg-w4by">B3</th>
+        <th class="tg-w4by">B4</th>
+        <th class="tg-w4by">R</th>
+        <th class="tg-w4by">C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-7yig"><span style="color:#000"><a href="https://arxiv.org/pdf/1703.10960.pdf">CVAE</a></span></td>
+        <td class="tg-f4yw">0.917</td>
+        <td class="tg-f4yw">3.83%</td>
+        <td class="tg-f4yw">0.861</td>
+        <td class="tg-f4yw">0.822</td>
+        <td class="tg-f4yw">0.781</td>
+        <td class="tg-nrix">0.747</td>
+        <td class="tg-nrix">0.811</td>
+        <td class="tg-nrix">2.95</td>
+        <td class="tg-nrix">0.815</td>
+      </tr>
+      <tr>
+        <td class="tg-7yig"><span style="color:#000"><a href="https://proceedings.neurips.cc/paper/2017/file/4b21cf96d4cf612f239a6c322b10c8fe-Paper.pdf">AG-CVAE></span></td>
+        <td class="tg-f4yw">0.845</td>
+        <td class="tg-f4yw">8.70%</td>
+        <td class="tg-f4yw">0.86</td>
+        <td class="tg-f4yw">0.822</td>
+        <td class="tg-f4yw">0.781</td>
+        <td class="tg-nrix">0.745</td>
+        <td class="tg-nrix">0.818</td>
+        <td class="tg-nrix">2.95</td>
+        <td class="tg-nrix">0.882</td>
+      </tr>
+      <tr>
+        <td class="tg-7yig"><span style="color:#000"><a href="https://arxiv.org/pdf/1910.12019.pdf">DCM</a></span></td>
+        <td class="tg-f4yw">0.437</td>
+        <td class="tg-f4yw">73.50%</td>
+        <td class="tg-f4yw">0.666</td>
+        <td class="tg-f4yw">0.555</td>
+        <td class="tg-f4yw">0.457</td>
+        <td class="tg-nrix">0.378</td>
+        <td class="tg-nrix">0.606</td>
+        <td class="tg-nrix">1.71</td>
+        <td class="tg-nrix">0.865</td>
+      </tr>
+      <tr>
+        <td class="tg-baqh"><span style="color:#000"><a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Deshpande_Fast_Diverse_and_Accurate_Image_Captioning_Guided_by_Part-Of-Speech_CVPR_2019_paper.pdf">POS</a></span></td>
+        <td class="tg-nrix">0.953</td>
+        <td class="tg-nrix">2.33%</td>
+        <td class="tg-nrix">0.855</td>
+        <td class="tg-nrix">0.816</td>
+        <td class="tg-nrix">0.773</td>
+        <td class="tg-nrix">0.738</td>
+        <td class="tg-nrix">0.804</td>
+        <td class="tg-nrix">2.94</td>
+        <td class="tg-nrix">0.774</td>
+      </tr>
+      <tr>
+        <td class="tg-baqh"><span style="color:#000"><a href="http://openaccess.thecvf.com/content_ICCV_2019/papers/Aneja_Sequential_Latent_Spaces_for_Modeling_the_Intention_During_Diverse_Image_ICCV_2019_paper.pdf">Seq-CVAE</a></span></td>
+        <td class="tg-nrix">0.78</td>
+        <td class="tg-nrix">16.40%</td>
+        <td class="tg-nrix">0.845</td>
+        <td class="tg-nrix">0.803</td>
+        <td class="tg-nrix">0.757</td>
+        <td class="tg-nrix">0.719</td>
+        <td class="tg-nrix">0.786</td>
+        <td class="tg-nrix">2.88</td>
+        <td class="tg-nrix">0.922</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm"><span style="color:#000"><a href="https://dl.acm.org/doi/10.1145/3503161.3548180">FLIP (Ours)</a></span></td>
+        <td class="tg-wa1i">0.692</td>
+        <td class="tg-wa1i">23.20%</td>
+        <td class="tg-nrix">0.854</td>
+        <td class="tg-nrix">0.813</td>
+        <td class="tg-nrix">0.77</td>
+        <td class="tg-nrix">0.733</td>
+        <td class="tg-nrix">0.8</td>
+        <td class="tg-nrix">2.89</td>
+        <td class="tg-wa1i">1.059</td>
+      </tr>
+    </tbody>
+    </table>
+    </center>
+    
+    
+    <br>
+    
+    <font face="helvetica" style="font-size:15px">
+    <div>    
+        <a href="" style="text-decoration: none;">
+        <img src="./CSAN/figs/github.png" height="30px">
+        </a>
+        <div style="margin-left: 10px; margin-top: 1px; display: inline-block;">
+            <a href="https://pan.baidu.com/s/1S7WBzPlmpYpdQC0t9zhQtw?pwd=v5r4">Baidu Cloud</a> (password: v5r4)
+            <br>
+            Code & checkpoints: pretraining (MEEK), diverse captioning (FLIP), and baseline models.
+        </div>
+    </div>
 
 <!-- Last Update
 <hr>
